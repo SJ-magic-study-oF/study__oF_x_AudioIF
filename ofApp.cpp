@@ -32,6 +32,7 @@ void ofApp::setup(){
 		ofExit();
 	}
 	// soundStream.setDeviceID(soundStream_DeviceId);
+	/* set in & out respectively. */
 	soundStream.setInDeviceID(soundStream_Input_DeviceId);  
 	soundStream.setOutDeviceID(soundStream_Output_DeviceId);
 	

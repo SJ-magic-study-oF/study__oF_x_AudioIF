@@ -3,11 +3,12 @@
 URL
 	https://forum.openframeworks.cc/t/ofsoundstream-different-sound-device-for-input-and-output/11087/9
 
-purpose = Requirment
+purpose
 	different audio devices for audio input and output.
 	
 fix files
 	/Users/nobuhiro/Documents/source/openframeworks/of_v0.9.0_osx_release/libs/openFrameworks/sound/
+	上記URLでは、"ofBaseSoundStream.cpp"となっているが、正しくは、"ofSoundStream.cpp".
 		ofBaseSoundStream.h
 		ofSoundStream.cpp
 		ofSoundStream.h
@@ -18,7 +19,7 @@ fix point
 			virtual void setInDeviceID(int deviceID) = 0;  
 			virtual void setOutDeviceID(int deviceID) = 0;  
 	
-	ofBaseSoundStream.cpp
+	ofSoundStream.cpp
 		add 2 functions.
 			void ofSoundStream::setInDeviceID(int deviceID){  
 				if( soundStream ){  
