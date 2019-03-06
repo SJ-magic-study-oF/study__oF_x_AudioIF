@@ -9,12 +9,12 @@ purpose
 fix files
 	/Users/nobuhiro/Documents/source/openframeworks/of_v0.9.0_osx_release/libs/openFrameworks/sound/
 	上記URLでは、"ofBaseSoundStream.cpp"となっているが、正しくは、"ofSoundStream.cpp".
-		ofBaseSoundStream.h
+		ofBaseSoundStream.h (ofSoundBaseTypes.h @ of_v0.10.0)
 		ofSoundStream.cpp
 		ofSoundStream.h
 	
 fix point
-	ofBaseSoundStream.h
+	ofBaseSoundStream.h (ofSoundBaseTypes.h @ of_v0.10.0)
 		add 2 lines.
 			virtual void setInDeviceID(int deviceID) = 0;  
 			virtual void setOutDeviceID(int deviceID) = 0;  
